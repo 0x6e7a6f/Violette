@@ -7,6 +7,7 @@ class Clean(commands.Cog):
         self.bot = bot
 
     @discord.slash_command(name = "clean", description = "Delete the number of messages you wish (limit at 100).")
+    @discord.default_permissions(administrator = True, manage_messages = True)
     async def clean(self, ctx, number):
 
         try:

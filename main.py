@@ -16,7 +16,7 @@ cogs_list = [
     "tic",
     "clean",
     "ping"
-]
+    ]
 
 for cog in cogs_list:
     bot.load_extension(f"Cogs.{cog}")
